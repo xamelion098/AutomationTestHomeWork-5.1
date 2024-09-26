@@ -17,8 +17,8 @@ public class AppReplanDeliveryTest {
 
 
 
-    String secondDate = Generator.dataGenerate(3);
-    String firstDate = Generator.dataGenerate(5);
+    String secondDate = Generator.dataGenerate(5);
+    String firstDate = Generator.dataGenerate(4);
     Faker faker = new Faker(new Locale("ru"));
     String city = Generator.city();
 
