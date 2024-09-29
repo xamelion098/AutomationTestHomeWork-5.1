@@ -17,8 +17,8 @@ public class AppReplanDeliveryTest {
     String firstDate = Generator.dataGenerate(4);
 
     String city = Generator.city();
-    String phone = Generator.Phone();
-    String fullName = Generator.Name();
+    String phone = Generator.phone();
+    String fullName = Generator.name();
 
     @Test
     public void validTestAppReplanDelivery() {

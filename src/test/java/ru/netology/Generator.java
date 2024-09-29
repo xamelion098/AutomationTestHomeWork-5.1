@@ -15,13 +15,14 @@ public class Generator {
 
     static Faker faker = new Faker();
 
-    public static String Name() {
+    public static String name() {
         Faker faker = new Faker(new Locale("ru"));
 
         String fullName = faker.name().fullName();
         return fullName;
     }
-    public static String Phone() {
+
+    public static String phone() {
         Faker faker = new Faker(new Locale("ru"));
 
         String PhoneClient = faker.name().fullName();
