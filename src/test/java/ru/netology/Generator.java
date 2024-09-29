@@ -6,16 +6,27 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Locale;
 import java.util.Random;
 
 
 public class Generator {
 
-    Faker faker = new Faker();
 
-    String name = faker.name().fullName(); // Miss Samanta Schmidt
-    String firstName = faker.name().firstName(); // Emory
-    String lastName = faker.name().lastName(); // Barton
+    static Faker faker = new Faker();
+
+    public static String Name() {
+        Faker faker = new Faker(new Locale("ru"));
+
+        String fullName = faker.name().fullName();
+        return fullName;
+    }
+    public static String Phone() {
+        Faker faker = new Faker(new Locale("ru"));
+
+        String PhoneClient = faker.name().fullName();
+        return PhoneClient;
+    }
 
     public static String city() {
         List<String> list = Arrays.asList("Волгоград", "Владивосток", "Владимир", "Вологда", "Рязань",
